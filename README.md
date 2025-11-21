@@ -1,4 +1,4 @@
-Campus Navigation System Using Graphs
+**Campus Navigation System Using Graphs**
 
 **Overview**
 This campus navigation system helps users find the shortest route between campus buildings by using a graph-based map and Dijkstra’s algorithm.  
