@@ -20,7 +20,7 @@ It then computes and displays step-by-step directions along the optimal route.
 
 
 **Sample Output**
-
+```
   Campus Locations (Buildings):
   1. Gate
   2. Library
@@ -44,7 +44,7 @@ It then computes and displays step-by-step directions along the optimal route.
   3. Move from Lab to Cafeteria (80 meters)
   
   Total distance: 210 meters
-
+```
 **Author**
 1. Harshitha G
 2. Harshika N
