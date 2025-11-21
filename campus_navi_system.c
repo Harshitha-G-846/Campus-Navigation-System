@@ -62,20 +62,20 @@ int main() {
     displayAsciiConnections();
 
     // User input (source and destination)
-    char srcName[MAX_NAME_LEN], destName[MAX_NAME_LEN];
-    printf("Please enter your start location (choose name from above): ");
-    scanf("%s", srcName);
-    printf("Please enter your end location (choose name from above): ");
-    scanf("%s", destName);
+    int scrIdx, destIdx;
+    printf("Please enter the number for your start location: ");
+    scanf("%d", &scrIdx);
+    printf("Please enter the number for your end location: ");
+    scanf("%d", &destIdx);
 
-    int srcIdx = getIndex(graph, srcName);
-    int destIdx = getIndex(graph, destName);
-    if (srcIdx == -1 || destIdx == -1) {
-        printf("Invalid locations.\n");
+    scrIdx = scrIdx - 1;
+    destIdx = destIdx - 1;
+    if (scrIdx < 0 || scrIdx >= NUM_LOCATIONS || destIdx < 0 || destIdx >= NUM_LOCATIONS) {
+        printf("Invalid selections.\n");
         return 1;
     }
 
-    dijkstraDirections(graph, srcIdx, destIdx);
+    dijkstraDirections(graph, scrIdx, destIdx);
 
     return 0;
 }
