@@ -21,6 +21,8 @@ It then computes and displays step-by-step directions along the optimal route.
 
 **Sample Output**
 ```
+  ======Welcome to the Campus Navigation System======
+
   Campus Locations (Buildings):
   1. Gate
   2. Library
@@ -33,7 +35,7 @@ It then computes and displays step-by-step directions along the optimal route.
     \                 |                          
     200              50                          
      \                |                          
-     Admin ---120--- Cafeteria                  
+     Admin ---120---> Cafeteria                  
   
   Please enter the number for your start location: 1
   Please enter the number for your end location: 5
