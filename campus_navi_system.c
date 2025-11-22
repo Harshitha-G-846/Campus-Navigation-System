@@ -56,7 +56,7 @@ int main() {
     addEdge(graph, 4, 2, 120);
 
     // Show buildings and connections (ASCII Art)
-    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    
     printf("\n\n======Welcome to the Campus Navigation System======\n\n");
     displayLocations(graph);
     displayAsciiConnections();
@@ -161,7 +161,7 @@ void dijkstraDirections(Graph* graph, int src, int dest) {
         return;
     }
 
-    printf("Directions to reach %s from %s:\n", graph->names[dest], graph->names[src]);
+    printf("\nDirections to reach %s from %s:\n", graph->names[dest], graph->names[src]);
     for (int i = count - 1; i > 0; --i) {
         // Find the distance between path[i] and path[i-1]
         Node* tmp = graph->adjLists[path[i]];
