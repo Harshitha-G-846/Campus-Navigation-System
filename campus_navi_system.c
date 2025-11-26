@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
-
+//including std files
 #define NUM_LOCATIONS 5
 #define MAX_NAME_LEN 20
 
