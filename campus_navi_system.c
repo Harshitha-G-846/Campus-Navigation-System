@@ -228,3 +228,4 @@ void dijkstraDirections(Graph* graph, int src, int dest) {
 
     printf("\nTotal distance: %d meters\n", dist[dest]);
 }
+
