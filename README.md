@@ -1,24 +1,28 @@
-*****Campus Navigation System Using Graphs*****
+<h1>Campus Navigation System Using Graphs</h1>
 
-**Overview**
-This campus navigation system helps users find the shortest route between campus buildings by using a graph-based map and Dijkstra’s algorithm.  
-The program displays all building names and their connections (with distances in meters), and prompts the user to select source and destination by number.  
-It then computes and displays step-by-step directions along the optimal route.
+<h3>Overview</h3>
 
-**Features**
+* This campus navigation system helps users find the shortest route between campus buildings by using a graph-based map and Dijkstra’s algorithm.  
+* The program displays all building names and their connections (with distances in meters), and prompts the user to select source and destination by number.  
+* It then computes and displays step-by-step directions along the optimal route.
+
+<h3>Features</h3>
+
 1. Displays a numbered list of all campus buildings.
 2. Shows a visual ASCII-art representation of all connections and their distances.
 3. Prompts user for source and destination **by number** (easy and error-proof).
 4. Calculates and displays the shortest path by actual distance using Dijkstra’s algorithm.
 5. Provides step-by-step directions and the total travel distance.
 
-**Data Structures Used**
+<h3>Data Structures Used</h3>
+
 1. **Graph (Adjacency List):** Represents campus map and connections.
 2. **Linked List:** Used in the adjacency list nodes.
 3. **Arrays:** For storing building names and pathfinding data.
 4. **Structs:** For nodes and overall graph structure.
 
-**Campus Map**
+<h2>Campus Map</h2>
+
 ```
   Campus Map (schematic, not to scale):
 
@@ -37,7 +41,8 @@ It then computes and displays step-by-step directions along the optimal route.
 
 ```
 
-**Sample Output**
+<h2>Sample Output</h2>
+
 ```
   =========================================
           Campus Navigation System
@@ -67,8 +72,9 @@ It then computes and displays step-by-step directions along the optimal route.
 
 ```
 
-**Author**
-1. Harshitha G
-2. Harshika N
-3. Harshitha S
-4. Haripriya S M
+<h3>Author</h3>
+
+1. Harshitha G (1RN24CS094)
+2. Harshika N (1RN24CS091)
+3. Harshitha S (1RN24CS096)
+4. Haripriya S M (1RN24CS089)
