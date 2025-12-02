@@ -18,10 +18,35 @@ It then computes and displays step-by-step directions along the optimal route.
 3. **Arrays:** For storing building names and pathfinding data.
 4. **Structs:** For nodes and overall graph structure.
 
+**Campus Map**
+```
+  Campus Map (schematic, not to scale):
+
+  [Gate] ---- [Library] ---- [Lab] ---- [Cafeteria]
+      \           |
+      \          |
+        [Admin] ---+
+
+  Connections (distance in meters):
+  Gate       <-> Library    : 100
+  Gate       <-> Admin      : 200
+  Library    <-> Lab        : 30
+  Library    <-> Admin      : 50
+  Lab        <-> Cafeteria  : 80
+  Admin      <-> Cafeteria  : 120
+
+```
 
 **Sample Output**
 ```
-  ======Welcome to the Campus Navigation System======
+  =========================================
+          Campus Navigation System
+  =========================================
+  1. Display campus buildings
+  2. Display campus map and connections
+  3. Find shortest path between two locations
+  4. Exit
+  Enter your choice: 3
 
   Campus Locations (Buildings):
   1. Gate
@@ -29,24 +54,19 @@ It then computes and displays step-by-step directions along the optimal route.
   3. Admin
   4. Lab
   5. Cafeteria
-  
-  Connections (distance in meters):
-  Gate ---100---> Library --30--> Lab --80--> Cafeteria
-    \                 |                          
-    200              50                          
-     \                |                          
-     Admin ---120---> Cafeteria                  
-  
-  Please enter the number for your start location: 1
-  Please enter the number for your end location: 5
-  
+
+  Enter the number for your start location: 1
+  Enter the number for your end location: 5
+
   Directions to reach Cafeteria from Gate:
   1. Move from Gate to Library (100 meters)
   2. Move from Library to Lab (30 meters)
   3. Move from Lab to Cafeteria (80 meters)
-  
+
   Total distance: 210 meters
+
 ```
+
 **Author**
 1. Harshitha G
 2. Harshika N
